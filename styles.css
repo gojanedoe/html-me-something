@@ -1,0 +1,198 @@
+/* Color Palettes:
+	Retro Cream: #189AA8 (teal), #445067 (dark purple), #F35844 (orange-red), #ECA400 (gold), #EAF8BF (pale white-green)
+	Pastel Berries: #FFFFFF (white), #FFCAD4 (pink), #B0D0D3 (light blue), #C08497 (dark pink), #F7AF9D (melon)
+*/
+
+/* ======== GENERAL ======== */
+
+* {
+	box-sizing: border-box;
+	font-family: "Harmattan";
+	font-size: 20px;
+	color: #1c2535;
+}
+
+body {
+	background-color: #ECA400;
+	margin: 5% 5% 4% 5%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+main {
+	max-width: 800px;
+	background-color: #f4f8bf;
+}
+
+/* ======== TOP ======== */
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	background-color: #ECA400;
+	width: 100%;
+	/* padding-bottom: 5%; */
+	max-width: 800px;
+}
+
+/* ======== HEADINGS ======== */
+
+h1 {
+	flex-grow: 4;
+	max-width: 800px;
+	font-family: "Akaya Kanadaka", cursive;
+	font-size: 100px;
+	background-color: #F35844;
+	padding: 15px 20px 20px 40px;
+	color: #fff1d2;
+}
+
+h2 {
+	flex-grow: 1;
+	font-size: 36px;
+	font-family: "Akaya Kanadaka", cursive;
+	background-color: #fcc137;
+	margin: auto;
+	padding-top: 82px;
+}
+
+#history-heading {
+	padding: 82px 45px 82px 0;
+	text-align: right;
+}
+
+#recipe-heading {
+	padding: 82px 0 82px 45px;
+}
+
+h3 {
+	font-family: "Akaya Kanadaka", cursive;
+	font-size: 24px;
+	padding-left: 10px;
+}
+
+/* ======== IMAGES ======== */
+
+img {
+	flex-grow: 1;
+	height: 200px;
+	padding: 40px;
+}
+
+img.first {
+	background-color: #189AA8;
+}
+
+img.second {
+	background-color: #445067;
+}
+
+img.third {
+	background-color: #f4f8bf;
+}
+
+#heart {
+	max-width: 33%;
+	padding: 40px;
+	background-color: #445067;
+}
+
+#cream {
+	max-width: 33%;
+	padding: 44px;
+	background-color: #F35844;
+}
+
+/* ======== SECTIONS ======== */
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* section minus the heading and images */
+.headless-section {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 45px;
+}
+
+/* ======== PARAGRAPHS & LISTS ======== */
+
+p {
+	padding: 20px 10px;
+	line-height: 1.4;
+}
+
+ul {
+	/* change to list style outside */
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+ol {
+	list-style: decimal outside none;
+	padding-top: 12px;
+	padding-left: 1.4em;
+	padding-bottom: 10;
+}
+
+#instructions li {
+	padding: 0px 10px 15px 10px;
+}
+
+ul li::before {
+	content: "\2022";
+	font-size: 40px;
+	padding-right: 15px;
+	padding-left: 10px;
+
+	position: relative;
+	top: .15em;
+	line-height: 20px;
+}
+
+#notes li::before {
+	content: "*";
+	padding-right: 10px;
+	font-size: 30px;
+
+	top: .25em;
+}
+
+/* ======== FOOTER ======== */
+
+footer {
+	max-width: 800px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* ======== MEDIA QUERIES ======== */
+
+@media only screen and (max-width: 532px) {
+	#heart, #cream {
+		max-width: none;
+	}
+	h2, #history-heading, #recipe-heading {
+		height: 100px;
+		padding: 32px 40px 0 40px;
+		text-align: left;
+	}
+	#cream {
+		order: -1;
+	}
+}
+
+@media only screen and (max-width: 518px) {
+	h1 {
+		font-size: 80px;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}	
+}

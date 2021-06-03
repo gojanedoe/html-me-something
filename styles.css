@@ -3,6 +3,15 @@
 	Pastel Berries: #FFFFFF (white), #FFCAD4 (pink), #B0D0D3 (light blue), #C08497 (dark pink), #F7AF9D (melon)
 */
 
+/* TODO
+	Finish responsive styling with lists
+	Remove extra comments including color palette
+	Remove any extra / unused ids / classes
+	Remove unused images
+	Put it up on GitHub Pages
+	Check browser compatibility
+*/
+
 /* ======== GENERAL ======== */
 
 * {
@@ -55,7 +64,7 @@ h2 {
 	font-size: 36px;
 	font-family: "Akaya Kanadaka", cursive;
 	background-color: #fcc137;
-	margin: auto;
+	margin: auto; /* might not need */
 	padding-top: 82px;
 }
 
